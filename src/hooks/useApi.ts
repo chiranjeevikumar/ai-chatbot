@@ -3,7 +3,7 @@
 import { useAuth } from '@/contexts/AuthContext';
 import { useCallback } from 'react';
 
-const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API = process.env.NEXT_PUBLIC_API_URL || '';
 
 export function useApi() {
   const { token } = useAuth();
